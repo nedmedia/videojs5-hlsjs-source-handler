@@ -6,8 +6,8 @@
   },
   "version": "0.1.0-beta.0",
   "main": "./lib/main.js",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "scripts": {
+    "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
     "hls.js": "^0.6.21",
@@ -19,10 +19,15 @@
     "url": "git@github.com:streamroot/videojs5-hlsjs-source-handler"
   },
   "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.24.0",
     "grunt": "^0.4.5",
     "grunt-browserify": "4.0.1",
     "grunt-contrib-uglify": "^1.0.0",
     "matchdep": "0.3.0",
-    "video.js": "^5.8.0"
+    "video.js": "^5.8.0",
+    "webpack": "^2.3.3"
   }
 }
